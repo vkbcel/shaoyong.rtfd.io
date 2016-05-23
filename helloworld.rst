@@ -1,5 +1,5 @@
-以下内容适用ubuntu14.04
-
+ubuntu 软件管理相关
+====================
 ###apt-get
 
 apt-get命令可以在线安装软件 镜像源列表在`/etc/apt/sources.list `  
