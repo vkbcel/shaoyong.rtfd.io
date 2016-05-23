@@ -9,7 +9,7 @@ vkbcel's Blog
 
 .. toctree::
    :numbered:
-   :maxdepth: 2
+   :maxdepth: 1
 
    linux/linux 
 
