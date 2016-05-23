@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-vkbcel's Blog 
+python相关(django|tornado) 
 ================================
 
 
@@ -11,5 +11,3 @@ vkbcel's Blog
    :numbered:
    :maxdepth: 1
 
-   linux/linux 
-   python/python
