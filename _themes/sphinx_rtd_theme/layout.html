@@ -75,7 +75,7 @@
   {%- block extrahead %} {% endblock %}
 
   {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
-  <script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
+  <!--<script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>-->
 
 </head>
 
@@ -92,7 +92,7 @@
           {% if logo and theme_logo_only %}
             <a href="{{ pathto(master_doc) }}">
           {% else %}
-            <a href="{{ pathto(master_doc) }}" class="icon icon-home"> {{ project }}
+            <!--<a href="{{ pathto(master_doc) }}" class="icon icon-home"> {{ project }}-->
           {% endif %}
 
           {% if logo %}
@@ -107,9 +107,9 @@
               {%- set nav_version = current_version %}
             {% endif %}
             {% if nav_version %}
-              <div class="version">
+              <!--<div class="version">
                 {{ nav_version }}
-              </div>
+              </div>-->
             {% endif %}
           {% endif %}
 
