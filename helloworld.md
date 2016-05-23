@@ -1,6 +1,6 @@
 ubuntu 软件管理相关
 ====================
-###apt-get
+##apt-get
 
 apt-get命令可以在线安装软件 镜像源列表在`/etc/apt/sources.list `  
 
@@ -34,7 +34,7 @@ apt-get命令可以在线安装软件 镜像源列表在`/etc/apt/sources.list `
     - `apt-get clean && sudo apt-get autoclean` 清理无用的包
     - `apt-get check` 检查是否有损坏的依赖
 
-###dpkg
+##dpkg
 
 deb文件是debain，ubuntu的软件包格式，很多情况下需要直接使用deb包。
 
