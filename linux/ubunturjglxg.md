@@ -1,7 +1,7 @@
 ubuntu 软件管理相关
 ====================
-##apt-get
-
+apt-get
+-------
 apt-get命令可以在线安装软件 镜像源列表在`/etc/apt/sources.list `  
 
 网易提供的镜像地址：[http://mirrors.163.com](http://mirrors.163.com)
@@ -10,12 +10,10 @@ apt-get命令可以在线安装软件 镜像源列表在`/etc/apt/sources.list `
 
 相关命令：
 
-
-
 - 搜索
-    - `apt-cache depends package`  了解使用依赖
-    - `apt-cache search package`      在镜像源中搜索包 
-    - `apt-cache show package`        获取包的相关信息，如说明、大小、版本等 
+    - `apt-cache depends package`————了解使用依赖
+    - `apt-cache search package`——在镜像源中搜索包 
+    - `apt-cache show package`————获取包的相关信息，如说明、大小、版本等 
     - `apt-cache rdepends package` 查看该包被哪些包依赖
 - 安装
     - `apt-get install package`                     安装包 
@@ -34,7 +32,8 @@ apt-get命令可以在线安装软件 镜像源列表在`/etc/apt/sources.list `
     - `apt-get clean && sudo apt-get autoclean` 清理无用的包
     - `apt-get check` 检查是否有损坏的依赖
 
-##dpkg
+dpkg
+----
 
 deb文件是debain，ubuntu的软件包格式，很多情况下需要直接使用deb包。
 
