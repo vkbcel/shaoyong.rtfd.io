@@ -3,19 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-VKBCEL'S
+python相关(django|tornado) 
 ================================
 
-.. raw:: html
-   :file: xiaoxin.html 
-
-.. raw:: html
-   :file: banner.html 
 
 .. toctree::
-   :hidden:
+   :numbered:
+   :maxdepth: 2
 
-   linux/linux 
-   python/python
-   wangzhi
-   diary/diary
+   pythonxnhj
+   pythonzsq
+   pythonmst
+   pythonpz
+   z

@@ -6,16 +6,8 @@
 VKBCEL'S
 ================================
 
-.. raw:: html
-   :file: xiaoxin.html 
-
-.. raw:: html
-   :file: banner.html 
 
 .. toctree::
-   :hidden:
+   :numbered:
+   :maxdepth: 2
 
-   linux/linux 
-   python/python
-   wangzhi
-   diary/diary
