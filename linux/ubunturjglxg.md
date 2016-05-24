@@ -2,8 +2,7 @@ ubuntu 软件管理相关
 ====================
 apt-get
 -------
-apt-get命令可以在线安装软件 镜像源列表在`/etc/apt/sources.list `  
-
+apt-get命令可以在线安装软件 镜像源列表在`/etc/apt/sources.list `
 网易提供的镜像地址：[http://mirrors.163.com](http://mirrors.163.com)
 
 ***

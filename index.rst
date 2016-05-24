@@ -8,7 +8,7 @@ vkbcel's Blog
 
 
 .. toctree::
-   :numbered:
+   :titlesonly:
    :maxdepth: 1
 
    linux/linux 

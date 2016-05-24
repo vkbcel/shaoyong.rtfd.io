@@ -7,4 +7,8 @@ linux相关(ubuntu|centos|openwrt)
    :maxdepth: 2
 
    ubunturjglxg
-
+   centosrjglxg
+   ysjyxg
+   wlxg
+   qtml
+   ynzz
