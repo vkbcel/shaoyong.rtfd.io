@@ -15,4 +15,5 @@ python相关(django|tornado)
    pythonzsq
    pythonmst
    pythonpz
+   pythoni18n
    z
