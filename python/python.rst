@@ -16,4 +16,4 @@ python相关(django|tornado)
    pythonmst
    pythonpz
    pythoni18n
-   z
+   sphinx_syntax
