@@ -26,5 +26,3 @@ vim配置
     set shiftwidth=4    "自动缩进占4个字符"
     set ignorecase smartcase    "搜索时忽略大小写"
     set expandtab  "用空格代替tab"
-
-

@@ -13,3 +13,4 @@ linux相关(ubuntu|centos|openwrt)
    qtml
    ynzz
    wwdx
+   wzxx

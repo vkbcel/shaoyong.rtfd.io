@@ -14,4 +14,4 @@ Jun
 
 * js库：chart.js 图形库
 * js库：moment.js 时间库
- 
+* bash命令：mkfs.vfat /dev/sdb 格式化U盘
