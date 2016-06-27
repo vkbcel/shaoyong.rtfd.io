@@ -11,7 +11,7 @@ java环境安装
 
 fcitx图形无法输入问题
 --------------------------
-.bashrc::
+::
 
     export XMODIFIERS="@im=fcitx"
     export GTK_IM_MODULE="fcitx"

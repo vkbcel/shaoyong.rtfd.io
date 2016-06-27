@@ -38,9 +38,7 @@ zip命令
 
 
 
-    unzip -d /home/shao myfile.zip  -d
-
-表示解压到/home/shao目录
+    unzip -d /home/shao myfile.zip  # -d表示解压到/home/shao目录
 
 rar命令
 ----------
