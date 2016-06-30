@@ -12,5 +12,4 @@ linux相关(ubuntu|centos|openwrt)
    wlxg
    qtml
    ynzz
-   wwdx
    wzxx

@@ -1,17 +1,9 @@
-未完待续
-==========
-2016
-----------
-Jun
-^^^^^^^^^^
+未完待续 
+================================
 
-* chrome插件: ``octotree`` github树状目录 
- 
-.. image:: egt.jpg
-   :scale: 50%
+.. toctree::
+   :numbered:
+   :maxdepth: 2
 
-学名：恶搞兔(攻疼兔)
-
-* js库：chart.js 图形库
-* js库：moment.js 时间库
-* bash命令：mkfs.vfat /dev/sdb 格式化U盘
+   zwwdx
+   lwwdx
