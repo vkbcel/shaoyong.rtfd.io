@@ -3,19 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-VKBCEL'S
+VKBCEL
 ================================
 
 .. raw:: html
-   :file: xiaoxin.html 
+   :file: xiaoxin.html
 
 .. raw:: html
-   :file: banner.html 
+   :file: banner.html
 
 .. toctree::
    :hidden:
 
-   linux/linux 
+   linux/linux
    python/python
    wangzhi
-   wwdx/wwdx 
+   wwdx/wwdx
