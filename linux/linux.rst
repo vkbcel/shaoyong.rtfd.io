@@ -1,4 +1,4 @@
-linux相关(ubuntu|centos|openwrt) 
+linux相关(ubuntu|centos|openwrt)
 ================================
 *常用命令，疑难杂症*
 
@@ -6,6 +6,7 @@ linux相关(ubuntu|centos|openwrt)
    :numbered:
    :maxdepth: 2
 
+   sjk
    ubunturjglxg
    centosrjglxg
    ysjyxg
