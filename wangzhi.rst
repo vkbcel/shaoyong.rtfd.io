@@ -11,3 +11,4 @@
    "javascript官网","https://developer.mozilla.org/zh-CN/docs/Web/JavaScript"
    "go语言圣经","http://www.gopl.io/"
    "清华大学镜像源","https://mirror.tuna.tsinghua.edu.cn/"
+   "翻墙hosts","http://laod.cn/hosts"

@@ -18,6 +18,7 @@ linux
 .vimrc::
 
     set number    "显示行号"
+    set relativenumber    "相对行号"
     set tabstop=4    "一个tab占4个字符"
     set shiftwidth=4    "自动缩进占4个字符"
     set ignorecase smartcase    "搜索时忽略大小写"
