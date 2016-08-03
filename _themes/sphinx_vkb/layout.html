@@ -1,0 +1,143 @@
+{#
+    author: vkbcel.
+#}
+{%- block doctype -%}
+<!DOCTYPE html>
+{%- endblock %}
+{%- set reldelim1 = reldelim1 is not defined and ' &raquo;' or reldelim1 %}
+{%- set reldelim2 = reldelim2 is not defined and ' |' or reldelim2 %}
+{%- set render_sidebar = (not embedded) and (not theme_nosidebar|tobool) and
+                         (sidebars != []) %}
+{%- set url_root = pathto('', 1) %}
+{# XXX necessary? #}
+{%- if url_root == '#' %}{% set url_root = '' %}{% endif %}
+{%- if not embedded and docstitle %}
+  {%- set titlesuffix = " &mdash; "|safe + docstitle|e %}
+{%- else %}
+  {%- set titlesuffix = "" %}
+{%- endif %}
+
+{%- macro relbar() %}
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>{{ _('Navigation') }}</h3>
+      <ul>
+        {%- for rellink in rellinks %}
+        <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
+          <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags|e }}"
+             {{ accesskey(rellink[2]) }}>{{ rellink[3] }}</a>
+          {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
+        {%- endfor %}
+        {%- block rootrellink %}
+        <li class="nav-item nav-item-0"><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
+        {%- endblock %}
+        {%- for parent in parents %}
+          <li class="nav-item nav-item-{{ loop.index }}"><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a>{{ reldelim1 }}</li>
+        {%- endfor %}
+        {%- block relbaritems %} {% endblock %}
+      </ul>
+    </div>
+{%- endmacro %}
+
+<html xmlns="http://www.w3.org/1999/xhtml"{% if language is not none %} lang="{{ language }}"{% endif %}>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Blog Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ pathto('_static/css/blog.css', 1) }}" rel="stylesheet">
+    <link href="{{ pathto('_static/css/theme.css', 1) }}" rel="stylesheet">
+    <link href="{{ pathto('_static/css/sphinx_rtd_theme.css', 1) }}" rel="stylesheet">
+    <link href="{{ pathto('_static/css/readthedocs-doc-embed.css', 1) }}" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+    <div class="header">
+        <div class="myself" style="">
+          <div class="logo-out" style="">
+          </div>
+          <div class="information">
+            <span style="font-size:25px;">邵勇 vkbcel</span><hr/>
+            python,linux,web相关
+          </div>
+          <div class="logo" style="">
+
+          </div>
+        </div>
+    </div>
+    <div class="header-nav">
+      <div class="container">
+  <nav class="navbar navbar-default navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ pathto(master_doc) }}">Home</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+{% set toctree = toctree(maxdepth=2, collapse=theme_collapse_navigation, includehidden=True) %}
+{{ toctree }}
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+      </div>
+    </div>
+
+{%- block content %}
+  <div class="col-sm-8 blog-main">
+    <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            {% block body %}{% endblock %}
+           </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+  </div>
+{%- endblock %}
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="{{ pathto('_static/js/logo.js', 1) }}"></script>
+<script type="text/javascript">
+$(function() {
+    $(".navbar-collapse").children().addClass("nav navbar-nav");
+    var $l1 = $(".navbar-collapse").find(".toctree-l1");
+    $l1.addClass("dropdown");
+    $(".navbar-collapse").find(".toctree-l1 >ul").addClass("dropdown-menu");
+    $(".navbar-collapse").find(".toctree-l1 >a").each(function(){
+        if($(this).next().length) {
+            $(this).attr({
+                "data-toggle": "dropdown",
+                "role": "button",
+                "aria-haspopup": "true",
+                "aria-expanded": "false"
+            }).addClass("dropdown-toggle").append('<span class="caret"></span>');
+        }
+    })
+
+})
+</script>
+  </body>
+</html>

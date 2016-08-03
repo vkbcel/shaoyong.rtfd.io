@@ -1,10 +1,6 @@
-python相关
+django
 ================================
-
 
 .. toctree::
    :numbered:
    :maxdepth: 2
-
-   python/python
-   django/django

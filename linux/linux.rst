@@ -1,4 +1,4 @@
-linux相关(ubuntu|centos|openwrt)
+linux相关
 ================================
 *常用命令，疑难杂症*
 
