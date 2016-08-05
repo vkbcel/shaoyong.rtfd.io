@@ -17,27 +17,6 @@
   {%- set titlesuffix = "" %}
 {%- endif %}
 
-{%- macro relbar() %}
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>{{ _('Navigation') }}</h3>
-      <ul>
-        {%- for rellink in rellinks %}
-        <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
-          <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags|e }}"
-             {{ accesskey(rellink[2]) }}>{{ rellink[3] }}</a>
-          {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
-        {%- endfor %}
-        {%- block rootrellink %}
-        <li class="nav-item nav-item-0"><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
-        {%- endblock %}
-        {%- for parent in parents %}
-          <li class="nav-item nav-item-{{ loop.index }}"><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a>{{ reldelim1 }}</li>
-        {%- endfor %}
-        {%- block relbaritems %} {% endblock %}
-      </ul>
-    </div>
-{%- endmacro %}
-
 <html xmlns="http://www.w3.org/1999/xhtml"{% if language is not none %} lang="{{ language }}"{% endif %}>
   <head>
     <meta charset="utf-8">
@@ -63,14 +42,19 @@
       <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{{ pathto('_static/js/logo.js', 1) }}"></script>
+    {%- block extrahead %} {% endblock %}
   </head>
-  <body role="document">
+  <body role="document" style="min-width:700px;">
+  {% block extrabody %} {% endblock %}
     <div class="header">
         <div class="myself" style="">
           <div class="logo-out" style="">
           </div>
           <div class="information">
-            <span style="font-size:25px;">邵勇 vkbcel</span><hr/>
+            <span style="font-size:25px;">邵勇 vkbcel</span><hr style="margin:10px 0;"/>
             python,linux,web相关
           </div>
           <div class="logo" style="">
@@ -114,12 +98,49 @@
         </div>
       </div>
   </div>
-  <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+  <div class="col-sm-3  blog-tool">
+          {% include "searchbox.html" %}
+          <hr style="margin:30px 20px;"/>
+            {% if next or prev %}
+              <div>
+                  <h4 style="margin-left:30px;">上一页</h4>
+                  <div style="margin-left:50px;font-size:16px;padding:5px;">
+                  {% if prev %}
+                    <a href="{{ prev.link|e }}">{{ prev.title|e }}</a>
+                  {% endif %}
+                  </div>
+                  <h4 style="margin:30px 0 0 30px;">下一页</h4>
+                  <div style="margin-left:50px;font-size:16px;padding:5px;">
+                  {% if next %}
+                    <a href="{{ next.link|e }}">{{ next.title|e }}</a>
+                  {% endif %}
+                  </div>
+              </div>
+            {% endif %}
+          <hr style="margin:30px 20px;"/>
+          <div>
+              <h4 style="margin:30px 0 0 30px;">当前位置:</h4>
+              <ul style="font-size:16px;margin-bottom: 50px;padding:5px;">
+                {%- for parent in parents %}
+                  <li class="nav-item-{{ loop.index }}"><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a>{{ reldelim1 }}</li>
+                {%- endfor %}
+              </ul>
+          </div>
   </div>
+  {% block footer %}{% endblock %}
 {%- endblock %}
-<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="{{ pathto('_static/js/logo.js', 1) }}"></script>
+<script type="text/javascript">
+var DOCUMENTATION_OPTIONS = {
+    URL_ROOT:'{{ url_root }}',
+    VERSION:'{{ release|e }}',
+    COLLAPSE_INDEX:false,
+    FILE_SUFFIX:'{{ '' if no_search_suffix else file_suffix }}',
+    HAS_SOURCE:  {{ has_source|lower }}
+};
+</script>
+{%- for scriptfile in script_files %}
+  <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+{%- endfor %}
 <script type="text/javascript">
 $(function() {
     $(".navbar-collapse").children().addClass("nav navbar-nav");
@@ -136,7 +157,14 @@ $(function() {
             }).addClass("dropdown-toggle").append('<span class="caret"></span>');
         }
     })
-
+    $(window).scroll(function(){
+        var $tool = $(".blog-tool");
+        if($(this).scrollTop() > 222 && $(this).width() > 800){
+            $tool.css({"position":"fixed","left":$tool.offset().left});
+        } else {
+            $tool.css("position", "static");
+        }
+    })
 })
 </script>
   </body>

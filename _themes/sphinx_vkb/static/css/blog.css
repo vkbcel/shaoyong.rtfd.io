@@ -36,9 +36,9 @@ h6, .h6 {
  */
 
 .header {
-  height: 250px;
+  height: 150px;
   background: #5A5A5A;
-  padding: 75px 0;
+  padding: 25px 0;
 }
 
 .myself {
@@ -81,6 +81,32 @@ h6, .h6 {
   height:100px;
   width: 200px;
   margin-left: 50px;
+}
+
+.blog-tool {
+  margin-top: 80px;
+  background-color: #F6F6F6;
+  padding: 10px;
+  -moz-border-radius: 3%;      /* Gecko browsers */
+  -webkit-border-radius: 3%;   /* Webkit browsers */
+  border-radius:3%;            /* W3C syntax */
+  top: 0px;
+}
+
+.vkb-form {
+  margin:20px;
+}
+
+.vkb-form input {
+  width:100%;
+}
+
+.nav-item-1 {
+  margin-left:50px;
+}
+
+.nav-item-2 {
+  margin-left:70px;
 }
 
 /*
