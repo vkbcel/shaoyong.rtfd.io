@@ -33,10 +33,10 @@
     <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{{ pathto('_static/css/blog.css', 1) }}" rel="stylesheet">
     <link href="{{ pathto('_static/css/theme.css', 1) }}" rel="stylesheet">
     <link href="{{ pathto('_static/css/sphinx_rtd_theme.css', 1) }}" rel="stylesheet">
     <link href="{{ pathto('_static/css/readthedocs-doc-embed.css', 1) }}" rel="stylesheet">
+    <link href="{{ pathto('_static/css/blog.css', 1) }}" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -87,7 +87,8 @@
     </div>
 
 {%- block content %}
-  <div class="col-sm-8 blog-main">
+<div class="container">
+  <div class="col-sm-9 blog-main">
     <div class="wy-nav-content">
         <div class="rst-content">
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -127,7 +128,22 @@
               </ul>
           </div>
   </div>
+</div>
   {% block footer %}{% endblock %}
+<div class="blog-footer">
+<pre class="pre-footer">
+          88
+          88
+          88
+,adPPYba, 88,dPPYba,  ,adPPYYba,  ,adPPYba,  8b       d8  ,adPPYba,  8b,dPPYba,   ,adPPYb,d8
+I8[    "" 88P'    "8a ""     `Y8 a8"     "8a `8b     d8' a8"     "8a 88P'   `"8a a8"    `Y88
+ `"Y8ba,  88       88 ,adPPPPP88 8b       d8  `8b   d8'  8b       d8 88       88 8b       88
+aa    ]8I 88       88 88,    ,88 "8a,   ,a8"   `8b,d8'   "8a,   ,a8" 88       88 "8a,   ,d88
+`"YbbdP"' 88       88 `"8bbdP"Y8  `"YbbdP"'      Y88'     `"YbbdP"'  88       88  `"YbbdP"Y8
+                                                 d8'                              aa,    ,88
+                                                d8'                                "Y8bbdP"
+</pre>
+</div>
 {%- endblock %}
 <script type="text/javascript">
 var DOCUMENTATION_OPTIONS = {
@@ -160,7 +176,7 @@ $(function() {
     $(window).scroll(function(){
         var $tool = $(".blog-tool");
         if($(this).scrollTop() > 222 && $(this).width() > 800){
-            $tool.css({"position":"fixed","left":$tool.offset().left});
+            $tool.css({"position":"fixed","left":$tool.offset().left,"width":$tool.css("width")});
         } else {
             $tool.css("position", "static");
         }

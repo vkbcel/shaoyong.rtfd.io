@@ -21,15 +21,6 @@ h6, .h6 {
 }
 
 
-/*
- * Override Bootstrap's default container.
- */
-
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
-}
 
 /*
  * myself
@@ -241,15 +232,20 @@ h6, .h6 {
  */
 
 .blog-footer {
-  padding: 40px 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
+  padding: 10px 0;
   border-top: 1px solid #e5e5e5;
+  background-color: #5A5A5A;
 }
-.blog-footer p:last-child {
-  margin-bottom: 0;
+
+.pre-footer {
+  margin:0 auto;
+  width:600px;
+  font-size:x-small;
+  border: 0px;
+  color: #FFF;
+  background-color: #5A5A5A;
 }
+
 
 .navbar-collapse >ul {
 
