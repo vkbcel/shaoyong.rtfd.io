@@ -44,12 +44,16 @@ ubuntu默认禁止使用root身份。
 
 - chromium 谷歌浏览器
 - Okular 这是个pdf阅读器
-- Terminalor　多个terminal
+- Terminalor 多个terminal
 - Guake Terminal 下拉终端
-- Amarok 音乐播放器
+- 网易云音乐 全平台
 - 为知笔记 全平台
 - wireshark
 - 有道词典
+- gimp 画图工具
+- FileZilla ftp工具
+- atom
+- calculator 计算器
 
 centos7 所遇问题和解决方法
 ---------------------------------
