@@ -173,14 +173,7 @@ $(function() {
             }).addClass("dropdown-toggle").append('<span class="caret"></span>');
         }
     })
-    $(window).scroll(function(){
-        var $tool = $(".blog-tool");
-        if($(this).scrollTop() > 222 && $(this).width() > 800){
-            $tool.css({"position":"fixed","left":$tool.offset().left,"width":$tool.css("width")});
-        } else {
-            $tool.css("position", "static");
-        }
-    })
+
 })
 </script>
   </body>

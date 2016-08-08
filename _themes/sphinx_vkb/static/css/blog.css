@@ -75,7 +75,7 @@ h6, .h6 {
 }
 
 .blog-tool {
-  margin-top: 80px;
+  margin: 80px 0;
   background-color: #F6F6F6;
   padding: 10px;
   -moz-border-radius: 3%;      /* Gecko browsers */
@@ -90,6 +90,13 @@ h6, .h6 {
 
 .vkb-form input {
   width:100%;
+}
+
+.section h2 {
+  border-top: 1px solid #CFE3DC;
+  padding-top: 40px;
+  font-size: 100%;
+  color: #0c3c26;
 }
 
 .nav-item-1 {
@@ -232,7 +239,7 @@ h6, .h6 {
  */
 
 .blog-footer {
-  padding: 10px 0;
+  height: 160px;
   border-top: 1px solid #e5e5e5;
   background-color: #5A5A5A;
 }
