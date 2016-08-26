@@ -39,6 +39,9 @@ ubuntu默认禁止使用root身份。
 
     greeter-show-manual-login=true
     allow-guest=false
+**创建wifi热点**
+
+https://github.com/oblique/create_ap
 
 **ubuntu中好用的一些软件**
 

@@ -11,3 +11,4 @@ VKBCEL'S
    :numbered:
    :maxdepth: 2
 
+word-wrap 允许长单词内部换行

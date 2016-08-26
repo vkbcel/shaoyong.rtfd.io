@@ -77,9 +77,11 @@
         <a class="navbar-brand" href="{{ pathto(master_doc) }}">Home</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse" style="display:none;" id="bs-example-navbar-collapse-1">
+        <div id="sphinx-nav" style="display:none;">
 {% set toctree = toctree(maxdepth=2, collapse=theme_collapse_navigation, includehidden=True) %}
 {{ toctree }}
+        </div>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
@@ -159,11 +161,11 @@ var DOCUMENTATION_OPTIONS = {
 {%- endfor %}
 <script type="text/javascript">
 $(function() {
-    $(".navbar-collapse").children().addClass("nav navbar-nav");
-    var $l1 = $(".navbar-collapse").find(".toctree-l1");
+    $("#sphinx-nav").children().addClass("nav navbar-nav");
+    var $l1 = $("#sphinx-nav").find(".toctree-l1");
     $l1.addClass("dropdown");
-    $(".navbar-collapse").find(".toctree-l1 >ul").addClass("dropdown-menu");
-    $(".navbar-collapse").find(".toctree-l1 >a").each(function(){
+    $l1.children("ul").addClass("dropdown-menu");
+    $l1.children("a").each(function(){
         if($(this).next().length) {
             $(this).attr({
                 "data-toggle": "dropdown",
@@ -173,7 +175,7 @@ $(function() {
             }).addClass("dropdown-toggle").append('<span class="caret"></span>');
         }
     })
-
+    $("#sphinx-nav").css("display", "block");
 })
 </script>
   </body>
