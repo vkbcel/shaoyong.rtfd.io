@@ -1,9 +1,8 @@
 python
 =============
-2016 Jul
--------------
+
 re模块
-^^^^^^^^^^^^^
+-------------
 
 * ``re.escape`` 返回字符串，所有非字母数字都会加上反斜杠
 以下代码来自django::
@@ -24,7 +23,7 @@ re模块
 非贪婪模式写法 ``*?`` ``+?`` ``??`` ``{m,n}?``
 
 操作excel
-^^^^^^^^^^^^^
+-------------
 python提供了标准库csv，直接操作excel可以用以下第三方库
 
 .. csv-table:: 相关库
@@ -36,3 +35,11 @@ python提供了标准库csv，直接操作excel可以用以下第三方库
    "xlrd","读xls",`Documentation <http://xlrd.readthedocs.io/en/latest/>`_
    "xlwt","写xls",`Documentation <http://xlwt.readthedocs.io/en/latest/>`_
    "xlutils","依赖xlrd和xlwt，提供复制、修改、过滤的能力",`Documentation <http://xlutils.readthedocs.io/en/latest/>`_
+
+编码声明
+--------------
+官方推荐形式::
+
+    # -*- coding: <encoding-name> -*-
+    # -*- coding: utf-8 -*-
+

@@ -25,3 +25,4 @@ linux
     set expandtab  "用空格代替tab"
 
 * bash命令： ``mkfs.vfat /dev/sdb`` 格式化U盘
+* locate刷新: updatedb
