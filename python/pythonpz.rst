@@ -23,3 +23,11 @@ cli::
 
     在.bashrc中添加 ``export PYTHONSTARTUP=~/.pystartup``
 
+修改镜像源
+----------------------------
+/etc/pip.conf::
+
+    [global]
+    trusted-host=pypi.douban.com
+    index-url = http://pypi.douban.com/simple
+
