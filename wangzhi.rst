@@ -12,3 +12,4 @@
    "go语言圣经","http://www.gopl.io/"
    "清华大学镜像源","https://mirror.tuna.tsinghua.edu.cn/"
    "翻墙hosts","http://laod.cn/hosts"
+   "python镜像源列表","https://pypi-mirrors.org/"

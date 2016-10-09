@@ -28,6 +28,6 @@ cli::
 /etc/pip.conf::
 
     [global]
-    trusted-host=pypi.douban.com
-    index-url = http://pypi.douban.com/simple
+    index-url = https://pypi.tuna.tsinghua.edu.cn/simple #清华大学镜像源
 
+`可选镜像源 <https://pypi-mirrors.org/>`_
