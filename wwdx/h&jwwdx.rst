@@ -7,6 +7,11 @@ html
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+下载文件名乱码问题::
+
+    Content-Disposition: 'attachment; filename=%s.xls; filename*=utf-8\'\'%s.xls' % (
+    urlquote(filename), urlquote(filename)) #django写法, 文件名使用url编码
+
 css
 -------------
 
