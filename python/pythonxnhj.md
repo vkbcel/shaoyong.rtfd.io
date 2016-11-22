@@ -14,3 +14,7 @@ python虚拟环境
     workon #列出已有环境
     deactivate #退出环境
     rmvirtualenv env1 #删除环境
+
+默认安装ipython
+
+    echo 'pip install ipython' >> $WORKON_HOME/postmkvirtualenv
