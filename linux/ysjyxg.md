@@ -27,7 +27,13 @@ tar命令
 
   - -J : xz类型的压缩，生成的后缀为`.tar.xz`
 
+压缩::
 
+    tar czf foobar.tar.gz dir
+
+解压::
+
+    tar xvf foobar.tar.gz
 
 zip命令
 ---------
