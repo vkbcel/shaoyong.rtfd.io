@@ -13,3 +13,5 @@
    "清华大学镜像源","https://mirror.tuna.tsinghua.edu.cn/"
    "翻墙hosts","http://laod.cn/hosts"
    "python镜像源列表","https://pypi-mirrors.org/"
+   "css参考手册","http://css.doyoe.com/"
+   "python中文手册","http://python.usyiyi.cn/"

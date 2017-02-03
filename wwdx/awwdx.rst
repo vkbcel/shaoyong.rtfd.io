@@ -13,3 +13,13 @@ node not found
 ::
 
     sudo npm install --registry=http://registry.npm.taobao.org
+
+python分享目录
+---------------------------
+::
+
+    python -m SimpleHttpServer 8080
+
+chrome调试插件
+---------------------------
+Batarang

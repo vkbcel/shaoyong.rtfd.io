@@ -239,7 +239,6 @@ h6, .h6 {
  */
 
 .blog-footer {
-  height: 160px;
   border-top: 1px solid #e5e5e5;
   background-color: #5A5A5A;
 }
@@ -247,8 +246,9 @@ h6, .h6 {
 .pre-footer {
   margin:0 auto;
   width:600px;
+  overflow:visible;
   font-size:x-small;
-  border: 0px;
+  border: 0;
   color: #FFF;
   background-color: #5A5A5A;
 }
