@@ -15,3 +15,10 @@
    "python镜像源列表","https://pypi-mirrors.org/"
    "css参考手册","http://css.doyoe.com/"
    "python中文手册","http://python.usyiyi.cn/"
+
+
+.. csv-table:: 有用的博客
+   :header: "博客", "网址"
+   :widths: 15, 50
+
+   "oracle安装教程","https://www.dizwell.com/"

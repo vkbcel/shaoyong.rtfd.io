@@ -28,3 +28,9 @@ js
 
 * IE8及以下数组不支持indexof
 * IE6/7不支持inline-block
+
+第三方库
+-------------
+* js库：chart.js 图形库
+* js库：moment.js 时间库
+* ``CKEditor`` The best web text editor for everyone

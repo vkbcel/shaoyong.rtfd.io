@@ -76,3 +76,7 @@ centos7 所遇问题和解决方法
 **关闭selinux**
 
 修改`/etc/selinux/config` 文件
+
+**centos7安装oracle12c**
+
+https://wiki.centos.org/HowTos/Oracle12onCentos7
