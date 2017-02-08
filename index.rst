@@ -17,5 +17,5 @@ python::
 
    linux/linux
    python/python
-   wangzhi
+   bookmarks
    wwdx/wwdx
