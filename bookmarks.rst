@@ -15,6 +15,7 @@
    "python镜像源列表","https://pypi-mirrors.org/"
    "css参考手册","http://css.doyoe.com/"
    "python中文手册","http://python.usyiyi.cn/"
+   "详细介绍Django CBV","http://ccbv.co.uk/"
 
 
 .. csv-table:: 收藏博客
@@ -29,6 +30,7 @@
 
    "Spirit", "https://github.com/nitely/Spirit", "基于Django的论坛", "Django"
    "django-blog-zinnia", "https://github.com/Fantomas42/django-blog-zinnia", "基于Django的博客", "Django"
+   "django-braces", "https://github.com/brack3t/django-braces", "可复用mixins", "Django"
    "flaskbb", "https://github.com/sh4nks/flaskbb", "基于Flask的论坛", "flask"
    "pinax", "https://github.com/pinax/pinax", "脚手架", "Python"
    "create_ap", "https://github.com/oblique/create_ap", "linux创建wifi热点", "linux"

@@ -1,4 +1,4 @@
-centos软件管理(yum, rpm)
+yum, rpm
 =================
 yum
 --------

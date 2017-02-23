@@ -1,4 +1,4 @@
-网络(netstat, ifconfig, scp)
+netstat, ifconfig, scp
 =================
 
 netstat命令

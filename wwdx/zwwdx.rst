@@ -1,7 +1,5 @@
 other
 ==========
-2016 Jun
-----------
 
 * chrome插件: ``octotree`` github树状目录
 

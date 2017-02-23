@@ -1,4 +1,4 @@
-三贱客(grep, sed, awk)
+grep, sed, awk
 =================
 
 grep

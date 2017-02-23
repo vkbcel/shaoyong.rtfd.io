@@ -1,4 +1,4 @@
-ubuntu 软件管理(apt-get, dpkg)
+apt-get, dpkg
 ====================
 apt-get
 -------
