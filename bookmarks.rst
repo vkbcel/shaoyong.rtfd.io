@@ -16,7 +16,7 @@
    "css参考手册","http://css.doyoe.com/"
    "python中文手册","http://python.usyiyi.cn/"
    "详细介绍Django CBV","http://ccbv.co.uk/"
-
+   "海盗船","https://thepiratebay.org/"
 
 .. csv-table:: 收藏博客
    :header: "博客", "网址"
