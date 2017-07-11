@@ -16,6 +16,7 @@
    "css参考手册","http://css.doyoe.com/"
    "python中文手册","http://python.usyiyi.cn/"
    "详细介绍Django CBV","http://ccbv.co.uk/"
+   "ansible tower下载地址","http://releases.ansible.com/ansible-tower/setup-bundle/"
 
 
 .. csv-table:: 收藏博客

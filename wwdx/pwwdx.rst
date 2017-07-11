@@ -43,3 +43,9 @@ python提供了标准库csv，直接操作excel可以用以下第三方库
     # -*- coding: <encoding-name> -*-
     # -*- coding: utf-8 -*-
 
+片段
+--------------
+try:
+    1 / 0
+except:
+    traceback.print_exception(*sys.exc_info())
