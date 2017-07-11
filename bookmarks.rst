@@ -17,7 +17,7 @@
    "python中文手册","http://python.usyiyi.cn/"
    "详细介绍Django CBV","http://ccbv.co.uk/"
    "ansible tower下载地址","http://releases.ansible.com/ansible-tower/setup-bundle/"
-
+   "海盗船","https://thepiratebay.org/"
 
 .. csv-table:: 收藏博客
    :header: "博客", "网址"
